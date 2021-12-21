@@ -118,7 +118,7 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
     plugins: [
       new webpack.DefinePlugin({
             'process.env': {
-            SERVER_API_URL: `'https://api/bes-webdeveloper-seraing.be'`
+            SERVER_API_URL: `'https://api.bes-webdeveloper-seraing.be'`
           }
         }),
         new MiniCssExtractPlugin({
