@@ -7,11 +7,6 @@
       "root": "",
       "sourceRoot": "src/main/webapp",
       "projectType": "application",
-      "build": {
-        "options": {
-          "styles": ["src/main/content/css/main.css"]
-        }
-      },
       "schematics": {
         "@schematics/angular:component": {
           "skipTests": true,
@@ -31,7 +26,13 @@
         }
       },
       "prefix": "jhi",
-      "architect": {}
+      "architect": {
+        "build": {
+          "options": {
+            "styles": ["src/main/content/css/font.css", "src/main/content/css/loading.css", "src/main/content/css/style.css"]
+          }
+        }
+      }
     }
   },
   "defaultProject": "bes-webdev",
