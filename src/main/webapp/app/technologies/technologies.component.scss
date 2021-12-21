@@ -1,0 +1,27 @@
+
+
+.centered-image {
+  position: absolute;
+  margin:auto;
+  width: auto;
+  height: auto;
+  max-width: 80%;
+  max-height: 150px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(.5); /* Microsoft Edge and Firefox 35+ */
+}
+
+.centered-image:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+  transition: filter .2s, width .2s, height .2s;
+  width:90%;
+  max-width: 90%;
+  height: auto;
+  max-height: 100%;
+}

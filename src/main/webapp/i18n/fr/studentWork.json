@@ -1,0 +1,27 @@
+{
+  "besWebdevApp": {
+    "studentWork": {
+      "home": {
+        "title": "StudentWorks",
+        "createLabel": "Créer un nouveau Student Work",
+        "createOrEditLabel": "Créer ou éditer un Student Work",
+        "notFound": "Aucun Student Work trouvé"
+      },
+      "created": "Un nouveau Student Work a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Student Work avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Student Work avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Student Work {{ id }} ?"
+      },
+      "detail": {
+        "title": "Student Work"
+      },
+      "title": "Title",
+      "slug": "Slug",
+      "student": "Student",
+      "content": "Content",
+      "gallery": "Gallery",
+      "tags": "Tags"
+    }
+  }
+}

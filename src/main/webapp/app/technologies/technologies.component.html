@@ -1,0 +1,25 @@
+<section class="container mt-5">
+    <div class="row">
+
+        <article class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+            <h1 class="no-margin">Technologies vues en classe</h1>
+        </article>
+    </div>
+    <!--    {% if page.content|length %}-->
+    <!--    <hr>-->
+    <!--    {% endif %}-->
+</section>
+
+<section class="container">
+    <div class="row">
+        <article class="col-md-2 col-6 text-center tile" style="" *ngFor="let techno of technologies;">
+            <div class="tile-wrapper">
+                <a href="{{techno.link}}">
+                <img jhiBesImage [src]="techno.pictureId" class="centered-image" style="">
+<!--                <p>{{techno.title}}</p>-->
+                </a>
+            </div>
+        </article>
+
+    </div>
+</section>

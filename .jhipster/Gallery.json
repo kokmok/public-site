@@ -1,0 +1,16 @@
+{
+  "name": "Gallery",
+  "fields": [],
+  "relationships": [],
+  "changelogDate": "20211130120034",
+  "entityTableName": "gallery",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["BesWebdev"]
+}

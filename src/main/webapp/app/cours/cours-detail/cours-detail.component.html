@@ -1,0 +1,29 @@
+<section class="container mt-5">
+<!--    <div class="row">-->
+        <article class="text-center">
+            <h1 class="no-margin">{{ue.title}}</h1>
+            <h2 class="no-margin mt-4">{{ue.periodes}} Périodes</h2>
+            <h3 *ngIf="ue.subtitle" class="mt-4">{{ue.subtitle}}</h3>
+<!--            {#<p class=" summary col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 ">#}-->
+<!--            {#{{entity.summary|raw}}#}-->
+<!--            {#</p>#}-->
+            <div class="contentWrapper margin-top-40 row">
+                <div *ngIf="ue.pictureId" class="page-illu col-4">
+                    <div class="box-content">
+                        <img jhiBesImage [src]="ue.pictureId" class="img-responsive" alt="illustration de {{ue.title}}" />
+                    </div>
+                </div>
+
+
+                <div [ngClass]="{'page-content': true,  'col-6': ue.pictureId, 'col-sm-12': !ue.pictureId}">
+                    <div [innerHTML]="ue.content"></div>
+                    <ng-container *ngIf="ue.technologies">
+                        <span *ngFor="let techno of ue.technologies" class="mr-1 badge badge-primary">{{techno.title}}</span>
+
+                    </ng-container>
+                </div>
+            </div>
+
+        </article>
+<!--    </div>-->
+</section>

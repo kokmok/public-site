@@ -1,0 +1,25 @@
+{
+  "besWebdevApp": {
+    "galleryElement": {
+      "home": {
+        "title": "GalleryElements",
+        "createLabel": "Créer un nouveau Gallery Element",
+        "createOrEditLabel": "Créer ou éditer un Gallery Element",
+        "notFound": "Aucun Gallery Element trouvé"
+      },
+      "created": "Un nouveau Gallery Element a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Gallery Element avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Gallery Element avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Gallery Element {{ id }} ?"
+      },
+      "detail": {
+        "title": "Gallery Element"
+      },
+      "position": "Position",
+      "title": "Title",
+      "picture": "Picture",
+      "gallery": "Gallery"
+    }
+  }
+}

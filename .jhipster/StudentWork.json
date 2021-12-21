@@ -1,0 +1,54 @@
+{
+  "name": "StudentWork",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "slug",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "student",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "content",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "gallery",
+      "otherEntityRelationshipName": "studentWork",
+      "relationshipValidateRules": "required",
+      "relationshipName": "gallery",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "tagCollection",
+      "otherEntityRelationshipName": "studentWork",
+      "relationshipName": "tags",
+      "otherEntityField": "id",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20211130115834",
+  "entityTableName": "student_work",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["BesWebdev"]
+}

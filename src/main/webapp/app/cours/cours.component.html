@@ -1,0 +1,44 @@
+<section class="container mt-5">
+    <div class="row">
+
+        <article class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+            <h1 class="no-margin">Unités d'enseignement</h1>
+                <div class="page-content">
+                    Ici je verrais bien un peu de texte mais je ne sais pas quoi mettre
+                </div>
+        </article>
+    </div>
+</section>
+
+<section class="container">
+    <div class="row">
+        <section class="col-12 filters">
+            <ul class="list-unstyled list-inline d-none d-md-block">
+                <li class="list-inline-item">
+                    <a href="#all" class="category-filter" (click)="resetCategoryFilter($event)">Toutes les catégories</a>
+                </li>
+
+                <li  class="list-inline-item" *ngFor="let category of categories">
+                    <a class="category-filter border-{{getColorClass(category)}} {{category === selectedCategory ? 'selected' : ''}}" (click)="filterCategory($event, category)" jhiTranslate="besWebdevApp.Category.{{category}}">{{ category }}</a>
+                </li>
+            </ul>
+            <ng-select class="d-block d-md-none" [(ngModel)]="selectedCategory" (change)="categorySelectChanged($event)" placeholder="Filtrez par catégorie">
+                <ng-option *ngFor="let category of categories" [value]="category">{{ ('besWebdevApp.Category.'+category) | translate }}</ng-option>
+            </ng-select>
+        </section>
+    </div>
+    <div class="row">
+            <article class="col-md-4 col-12 text-center tile" style="height: 360px;" *ngFor="let ue of uesFiltered;let i = index">
+                <div class="tile-wrapper">
+                <div jhiBesImage [background]="ue.pictureId" class="tile-wrapper">
+                    <a class="tileLink {{getColorClass(ue.category)}}" [routerLink]="['/unites-d-enseignement', ue.slug]">
+                        <h1 class="tile-h1">{{ue.title}}</h1>
+                        <hr class="tile-hr">
+                        <h2 class="tile-h2">{{ue.subtitle}}</h2>
+                        <p>{{ue.summary}}</p>
+                    </a>
+                </div>
+                </div>
+            </article>
+    </div>
+</section>

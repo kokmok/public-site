@@ -1,0 +1,43 @@
+{
+  "name": "GalleryElement",
+  "fields": [
+    {
+      "fieldName": "position",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "picture",
+      "otherEntityRelationshipName": "galleryElement",
+      "relationshipName": "picture",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "gallery",
+      "otherEntityRelationshipName": "galleryElement",
+      "relationshipValidateRules": "required",
+      "relationshipName": "gallery",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20211130120134",
+  "entityTableName": "gallery_element",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["BesWebdev"]
+}

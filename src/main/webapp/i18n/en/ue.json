@@ -1,0 +1,30 @@
+{
+  "besWebdevApp": {
+    "ue": {
+      "home": {
+        "title": "Ues",
+        "createLabel": "Create a new Ue",
+        "createOrEditLabel": "Create or edit a Ue",
+        "notFound": "No Ues found"
+      },
+      "created": "A new Ue is created with identifier {{ param }}",
+      "updated": "A Ue is updated with identifier {{ param }}",
+      "deleted": "A Ue is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ue {{ id }}?"
+      },
+      "detail": {
+        "title": "Ue"
+      },
+      "title": "Title",
+      "slug": "Slug",
+      "subtitle": "Subtitle",
+      "summary": "Summary",
+      "content": "Content",
+      "periodes": "Periodes",
+      "category": "Category",
+      "picture": "Picture",
+      "tags": "Tags"
+    }
+  }
+}

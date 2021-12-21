@@ -1,0 +1,10 @@
+{
+  "besWebdevApp": {
+    "Category": {
+      "null": "",
+      "FRONT_END": "FRONT-END",
+      "BACK_END": "BACK-END",
+      "GENERIC": "GLOBAL"
+    }
+  }
+}
