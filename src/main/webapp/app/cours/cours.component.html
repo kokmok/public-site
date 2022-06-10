@@ -31,11 +31,13 @@
             <article class="col-md-4 col-12 text-center tile" style="height: 360px;" *ngFor="let ue of uesFiltered;let i = index">
                 <div class="tile-wrapper">
                 <div jhiBesImage [background]="ue.pictureId" class="tile-wrapper">
-                    <a class="tileLink {{getColorClass(ue.category)}}" [routerLink]="['/unites-d-enseignement', ue.slug]">
+<!--                    <a class="tileLink {{getColorClass(ue.category)}}" [routerLink]="['/unites-d-enseignement', ue.slug]">-->
+                    <a class="tileLink {{getColorClass(ue.category)}}">
                         <h1 class="tile-h1">{{ue.title}}</h1>
                         <hr class="tile-hr">
                         <h2 class="tile-h2">{{ue.subtitle}}</h2>
                         <p>{{ue.summary}}</p>
+                        <p>{{ue.periodes}} périodes</p>
                     </a>
                 </div>
                 </div>
