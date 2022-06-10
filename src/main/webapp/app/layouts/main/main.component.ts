@@ -1,4 +1,4 @@
-import {Component, OnInit, RendererFactory2, Renderer2, ViewChild, ElementRef} from '@angular/core';
+import { Component, OnInit, RendererFactory2, Renderer2, ViewChild, ElementRef } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Router, ActivatedRouteSnapshot, NavigationEnd, NavigationError } from '@angular/router';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
@@ -12,10 +12,11 @@ import { AccountService } from 'app/core/auth/account.service';
 export class MainComponent implements OnInit {
   private renderer: Renderer2;
 
-  @ViewChild('mobileNav', {static: false})
+  @ViewChild('mobileNav', { static: false })
   mobileNav: ElementRef;
 
   navbarToggledShow = false;
+  now = new Date();
 
   constructor(
     private accountService: AccountService,
@@ -70,6 +71,5 @@ export class MainComponent implements OnInit {
       this.renderer.addClass(this.mobileNav.nativeElement, 'show');
     }
     this.navbarToggledShow = !this.navbarToggledShow;
-
   }
 }
