@@ -1,6 +1,7 @@
 {
   "besWebdevApp": {
     "ue": {
+      "pageTitle": "BES Webdeveloper, unités d'enseignement.",
       "home": {
         "title": "Ues",
         "createLabel": "Create a new Ue",
